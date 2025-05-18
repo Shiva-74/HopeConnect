@@ -58,13 +58,70 @@ Over *300,000 patients* in India await transplants, yet *20+ lives are lost dail
 
 ---
 
+## System Requirements
+
+- Python 3.x  
+
+- Node.js (with npm)  
+
+- MongoDB Community Server  
+
+- Ganache (Truffle Suite)  
+
+- Truffle Suite  
+
+## Installation Links
+
+- [Python 3.x](https://www.python.org/downloads/) – Official Python downloads page.  
+
+- [Node.js (with npm)](https://nodejs.org/en/download/) – Official Node.js download page.  
+
+- [MongoDB Community Edition](https://www.mongodb.com/try/download/community) – Download MongoDB Community Server.  
+
+- [Ganache (Truffle Suite)](https://www.trufflesuite.com/ganache) – Ethereum blockchain emulator.  
+
+- [Truffle Suite](https://www.trufflesuite.com/truffle) – Ethereum development framework.  
+
 
 ## Clone the repository:  
-```git clone https://github.com/Shiva-74/HopeConnect.git```  
+```
+git clone https://github.com/Shiva-74/HopeConnect.git
+```  
 ## Go to hopeconnect direcory  
-```cd hopeconnect```  
+```
+cd hopeconnect
+```  
+## Go to hopeconnect-blockchain directory  
+```
+cd hopeconnect-blockcahin
+```
 
 
-## Steps to run hopeconnect-blockchain  
+## Steps to run hopeconnect-blockchain 
+
+1. *Start Ganache:* Open the Ganache application and click *Quickstart (Ethereum)* to launch a local blockchain network and install the dependencies.
+  ```
+npm install
+npm install -g truffle
+npm install -g ganache
+npm install --save-dev ganache
+npm install @openzeppelin/contracts@4.9.6 --save
+```
+
+3. *Deploy Smart Contracts:* In a terminal, navigate to the project’s blockchain directory and compile/deploy the contracts:  
+
+```
+truffle compile --all
+```
+```
+truffle migrate --reset
+```
+
+## Now go to hopeconnect-ai  
+```
+cd ..
+cd hopeconnect-ai
+```
+
 
 
