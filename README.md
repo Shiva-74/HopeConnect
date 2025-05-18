@@ -1,165 +1,70 @@
-# HopeConnect
-HopeConnect: Decentralized, AI-Driven Organ-Donation Matching & Transparency Platform  
+# Getting Started with Create React App
 
-*Connecting Last Hopes With New Beginnings*
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-HopeConnect is a *blockchain-powered, **AI-driven* platform that transforms India’s organ donation ecosystem by enabling *secure, transparent, and real-time matching* of donors and recipients.
+## Available Scripts
 
-Over *300,000 patients* in India await transplants, yet *20+ lives are lost daily* due to outdated systems, poor logistics, and lack of trust. HopeConnect bridges this life-threatening gap through Ethereum smart contracts, predictive AI models, and automated logistics coordination.
+In the project directory, you can run:
 
----
+### `npm start`
 
-## 🚀 Key Features
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### 🔗 Blockchain-Powered Consent & Transparency
-- Immutable, *tamper-proof records* of donor consent and organ lifecycle on *Ethereum*.
-- *Smart contracts* automate access control, priority enforcement, and audit trails.
-  
-### 🧠 AI-Optimized Matching Engine
-- Matches beyond blood types — considers *age, comorbidities, distance, viability*.
-- Uses *ML models* to predict *graft survival success* and suggest optimal recipient.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### 📦 Real-Time Logistics & Automation
-- Calculates *fastest delivery routes* via road/air considering traffic and customs delays.
-- Generates permits and *cold-chain documents* via integrated APIs.
+### `npm test`
 
-### 📊 Stakeholder Portals
-- *Hospitals:* AI-ranked recipient list, organ ETA, viability scores.
-- *Regulators/NGOs:* Real-time compliance, fairness metrics, and chain-of-custody logs.
-- *Donor Families:* Receive impact updates — e.g., “Your gift saved 3 lives.”
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### 🎁 Incentivization via HopeTokens
-- Donors and families receive *HopeTokens* redeemable for:
-  - 🎟 Health checkups  
-  - 🛡 Insurance perks  
-  - 💸 Tax benefits
+### `npm run build`
 
-### 📢 Awareness & Sign-Up Drives
-- In-app awareness campaigns to boost *public registrations* and *reduce stigma* around donation.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
----
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## 🛠 Tech Stack
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-*Blockchain:* Ethereum, Solidity, Truffle, Ganache, Web3.js  
-*AI/ML:* Python, Scikit-learn, XGBoost, Pandas, Flask, Geopy  
-*Backend/API:* Node.js, Express.js, MongoDB, Postman  
-*Frontend:* React.js
+### `npm run eject`
 
----
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## 💡 How It Works
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-1. Donor consents recorded via *smart contracts*.
-2. Organ offer triggers *AI model* to rank eligible recipients.
-3. Smart contract validates access, initiates automated logistics.
-4. Hospitals and authorities coordinate via live dashboard.
-5. Donor families are updated via secure app & rewarded via *HopeTokens*.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
----
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## System Requirements
+## Learn More
 
-- Python 3.x  
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- Node.js (with npm)  
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-- MongoDB Community Server  
+### Code Splitting
 
-- Ganache (Truffle Suite)  
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-- Truffle Suite  
+### Analyzing the Bundle Size
 
-## Installation Links
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-- [Python 3.x](https://www.python.org/downloads/) – Official Python downloads page.  
+### Making a Progressive Web App
 
-- [Node.js (with npm)](https://nodejs.org/en/download/) – Official Node.js download page.  
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-- [MongoDB Community Edition](https://www.mongodb.com/try/download/community) – Download MongoDB Community Server.  
+### Advanced Configuration
 
-- [Ganache (Truffle Suite)](https://www.trufflesuite.com/ganache) – Ethereum blockchain emulator.  
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-- [Truffle Suite](https://www.trufflesuite.com/truffle) – Ethereum development framework.  
+### Deployment
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-## Clone the repository:  
-```
-git clone https://github.com/Shiva-74/HopeConnect.git
-```  
-## Go to hopeconnect direcory  
-```
-cd hopeconnect
-```  
-## Go to hopeconnect-blockchain directory  
-```
-cd hopeconnect-blockcahin
-```
+### `npm run build` fails to minify
 
-
-## Steps to run hopeconnect-blockchain 
-
-1. *Start Ganache:* Open the Ganache application and click *Quickstart (Ethereum)* to launch a local blockchain network and install the dependencies.
-  ```
-npm install
-npm install -g truffle
-npm install -g ganache
-npm install --save-dev ganache
-npm install @openzeppelin/contracts@4.9.6 --save
-```
-
-3. *Deploy Smart Contracts:* In a terminal, navigate to the project’s blockchain directory and compile/deploy the contracts:  
-
-```
-truffle compile --all
-```
-```
-truffle migrate --reset
-```
-
-## Now go to hopeconnect-ai  in a new terminal
-```
-cd hopeconnect
-cd hopeconnect-ai
-```
-### Run requirements.txt  
-
-```
-pip install -r requirements.txt
-```
-
-### Run app.py
-```
-python src/python.py
-```
-
-# Now go to hopeconnect-backend in a new terminal
-```
-cd hopeconnect
-cd hopeconnect-backend
-```
-
-### Run the backend
-```
-npm run dev
-```
-
-# Now go to the hopeconnect-frontend in a new terminal
-```
-cd hopeconnect
-cd hopeconnect-frontend
-```
-
-### Start the frontend app
-```
-set NODE_OPTIONS=--openssl-legacy-provider
-npm start
-```
-
-## License
-
-HopeConnect is released under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-
-
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

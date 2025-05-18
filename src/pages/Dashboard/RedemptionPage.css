@@ -1,0 +1,111 @@
+/* hopeconnect-frontend/src/pages/Dashboard/RedemptionPage.css */
+
+.redemption-page {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.redemption-page .balance-display.card {
+    background-color: #e7f3ff; /* Light blue */
+    color: #004085; /* Dark blue text */
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 1px solid #b8d6f3;
+}
+.redemption-page .balance-display h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.redemption-page .balance-display h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+.redemption-page .balance-display p { /* For the "Please set ETH address" message */
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+
+.redemption-page .incentives-list h3 {
+    font-size: 1.8rem;
+    color: #0056b3;
+    margin-bottom: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.redemption-page .incentives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.redemption-page .incentive-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.redemption-page .incentive-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.redemption-page .incentive-icon {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+.redemption-page .incentive-card h4 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+    min-height: 48px; /* For consistent height if titles vary in length */
+}
+.redemption-page .incentive-description {
+    font-size: 0.9rem;
+    color: #555;
+    flex-grow: 1; /* Allows description to take available space */
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.redemption-page .incentive-cost {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #28a745; /* Green for cost */
+    margin-bottom: 15px;
+}
+.redemption-page .incentive-card .btn-primary {
+    width: 100%;
+    margin-top: auto; /* Pushes button to the bottom of the card */
+}
+
+.message-banner { /* Shared style, can be global */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+}
+.message-banner.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+.message-banner.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}

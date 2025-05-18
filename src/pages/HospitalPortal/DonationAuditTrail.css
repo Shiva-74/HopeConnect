@@ -1,0 +1,129 @@
+/* hopeconnect-frontend/src/pages/HospitalPortal/DonationAuditTrail.css */
+
+.donation-audit-trail-page .container {
+    max-width: 900px; /* Or your preferred container width */
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.donation-audit-trail-page .page-header-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.donation-audit-trail-page .page-header-controls h3 {
+    font-size: 1.8rem; /* Adjusted for more prominence */
+    color: #0056b3;
+    margin: 0;
+}
+
+.donation-audit-trail-page .page-subtitle-text {
+    color: #555;
+    font-size: 1rem; /* Slightly larger subtitle */
+    margin-top: 5px;
+}
+.donation-audit-trail-page .page-subtitle-text strong {
+    color: #007bff;
+    font-weight: 600;
+}
+
+.donation-audit-trail-page .btn-outline.btn-sm {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border-width: 1px; /* Ensure outline buttons are not too thick */
+}
+
+.donation-audit-trail-page .audit-trail-container.card {
+    background-color: #f9fafb; /* Slightly off-white for container */
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+    margin-top: 20px;
+}
+
+.donation-audit-trail-page .audit-summary-panel {
+    background-color: #eef5ff; /* Lighter blue for summary */
+    padding: 20px 25px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    border: 1px solid #cce0ff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px 20px;
+}
+.donation-audit-trail-page .summary-item {
+    font-size: 0.95rem;
+    color: #004085; 
+    line-height: 1.6;
+}
+.donation-audit-trail-page .summary-item strong {
+    color: #002752; /* Darker blue for labels */
+    min-width: 130px; 
+    display: inline-block;
+}
+.donation-audit-trail-page .summary-item a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: 500;
+}
+.donation-audit-trail-page .summary-item a:hover {
+    text-decoration: underline;
+}
+
+.status-tag { 
+    padding: 5px 12px; /* Slightly more padding */
+    border-radius: 15px; /* More rounded */
+    font-size: 0.85rem; /* Slightly larger */
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    white-space: nowrap;
+    display: inline-block; /* To allow margin/padding */
+}
+.status-tag.status-successful, .status-tag.status-completed { background-color: #28a745; } /* Green */
+.status-tag.status-in-progress, .status-tag.status-in-transit { background-color: #007bff; } /* Blue */
+.status-tag.status-pending, .status-tag.status-awaiting { background-color: #ffc107; color: #212529 !important; } /* Yellow with dark text */
+.status-tag.status-default, .status-tag.status-recorded, .status-tag.status-unknown { background-color: #6c757d; } /* Gray */
+.status-tag.status-failed, .status-tag.status-error, .status-tag.status-discarded { background-color: #dc3545; } /* Red */
+.status-tag.status-matched { background-color: #6f42c1; } /* Purple for matched */
+.status-tag.status-scheduled { background-color: #17a2b8; } /* Teal for scheduled */
+
+
+.donation-audit-trail-page .audit-steps-list {
+    position: relative; 
+}
+
+/* Error message style */
+.donation-audit-trail-page .error-message.card {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #f5c6cb;
+    font-weight: 500;
+}
+
+/* Styles from AuditTrailItem.css will be applied to individual items */
+/* Make sure AuditTrailItem.css is correctly imported by AuditTrailItem.js */
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .donation-audit-trail-page .audit-summary-panel {
+        grid-template-columns: 1fr; /* Stack summary items on smaller screens */
+    }
+    .donation-audit-trail-page .page-header-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .donation-audit-trail-page .page-header-controls .btn-sm {
+        margin-top: 10px;
+    }
+}

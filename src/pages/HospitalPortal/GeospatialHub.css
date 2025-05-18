@@ -1,0 +1,21 @@
+ /* ... (existing styles from previous prompt for GeospatialHub.css) ... */
+
+ .geospatial-hub-page .item-sub-info {
+     /* ... existing ... */
+     margin-bottom: 3px;
+ }
+ .geospatial-hub-page .route-preview {
+     font-size: 0.8rem;
+     color: #777;
+     display: block;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     margin-bottom: 2px; /* Spacing before ETA */
+ }
+ .geospatial-hub-page .eta-preview {
+     font-size: 0.8rem;
+     color: #555;
+     display: block;
+     font-style: italic;
+ }

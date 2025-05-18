@@ -1,0 +1,92 @@
+.homepage .features-section {
+  background-color: #fff; /* White background for this section */
+  padding: 60px 0; /* Added padding */
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+.features-grid .feature-card { /* Ensure cards stretch if in a row */
+  display: flex;
+  flex-direction: column;
+}
+
+
+.impact-section {
+  padding: 60px 0;
+  background-color: #e9f5ff; /* Light blue background */
+}
+
+.impact-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.impact-stat-item {
+  text-align: center;
+  padding: 30px 20px; /* Increased padding */
+  background-color: #fff;
+  border-radius: 8px; /* Ensure card class styles apply or define here */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.impact-value {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #007bff; /* Primary color for the value */
+  margin-bottom: 8px;
+}
+
+.impact-label {
+  font-size: 1rem;
+  color: #555;
+}
+
+.cta-section {
+  background: linear-gradient(to right, #007bff, #0056b3); /* Blue gradient */
+  color: white;
+  padding: 80px 20px; /* Increased padding */
+}
+
+.cta-section .section-title {
+  color: white;
+}
+.cta-section .section-subtitle {
+  color: #e0e0e0;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+.cta-buttons .btn {
+  margin: 0; /* Removed individual margin as gap is used */
+  /* padding: 12px 28px; */ /* Using btn-lg from App.css */
+  /* font-size: 1.1rem; */
+}
+.cta-buttons .btn-primary { /* Override for this section's primary */
+    background-color: #fff;
+    color: #007bff;
+    border: 2px solid #fff; /* Thicker border */
+}
+.cta-buttons .btn-primary:hover {
+    background-color: #f0f0f0;
+    color: #0056b3;
+    border-color: #f0f0f0;
+}
+.cta-buttons .btn-secondary { /* Override for this section's secondary */
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.cta-buttons .btn-secondary:hover {
+    background-color: rgba(255,255,255,0.1);
+    border-color: #fff;
+}

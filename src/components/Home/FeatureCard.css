@@ -1,0 +1,48 @@
+.feature-card {
+  text-align: center;
+  padding: 30px 25px; /* Increased padding */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex; /* For flex column layout */
+  flex-direction: column;
+  justify-content: space-between; /* Pushes link to bottom if card heights vary */
+  height: 100%; /* Ensure cards in a grid take full height of row */
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: var(--primary-color, #007bff);
+  margin-bottom: 20px; /* Increased margin */
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color, #007bff);
+  margin-bottom: 15px; /* Increased margin */
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px; /* Increased margin */
+  flex-grow: 1; /* Allows p to take available space, pushing link down */
+}
+
+.feature-link {
+  color: var(--primary-color, #007bff);
+  text-decoration: none;
+  font-weight: 600; /* Bolder link */
+  display: inline-block; /* For better spacing/padding */
+  padding: 5px 0; /* Slight padding */
+  margin-top: auto; /* Pushes link to bottom in flex container */
+}
+
+.feature-link:hover {
+  text-decoration: underline;
+  color: var(--primary-hover-color, #0056b3);
+}

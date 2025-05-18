@@ -1,0 +1,176 @@
+.geospatial-hub-page .page-header-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 15px;
+}
+.geospatial-hub-page h3 {
+    font-size: 1.6rem;
+    color: #0056b3;
+    margin-bottom: 3px;
+    margin-top: 0; /* Reset if coming from parent */
+}
+.geospatial-hub-page .page-subtitle-text {
+    color: #555;
+    font-size: 0.95rem;
+}
+.geospatial-hub-page .search-filter-geospatial input.form-control-sm {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    min-width: 250px; /* Ensure search input has decent width */
+}
+.geospatial-hub-page .inline-loader {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+
+.geospatial-hub-page .hub-layout-geospatial {
+    display: flex;
+    gap: 20px;
+    align-items: stretch; /* Make columns same height */
+    min-height: calc(75vh - 50px); /* Adjust based on header and other elements */
+}
+
+.geospatial-hub-page .transport-list-sidebar-geospatial {
+    flex: 0 0 320px; /* Fixed width for sidebar, adjust as needed */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    overflow-y: auto; /* Scroll for list */
+    max-height: 75vh; /* Match overall layout height strategy */
+}
+.geospatial-hub-page .transport-list-sidebar-geospatial h4 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    display: flex; /* For loader alignment */
+    align-items: center;
+}
+.geospatial-hub-page .transport-list-sidebar-geospatial ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.geospatial-hub-page .transport-list-item {
+    padding: 12px 10px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-radius: 4px;
+    margin-bottom: 5px; /* Spacing between items */
+}
+.geospatial-hub-page .transport-list-item:last-child {
+    border-bottom: none;
+}
+.geospatial-hub-page .transport-list-item:hover {
+    background-color: #f0f8ff; 
+}
+.geospatial-hub-page .transport-list-item.active {
+    background-color: #e0f0ff; 
+    font-weight: 500; /* Don't make text too bold, color is enough */
+    /* color: #0056b3; */ /* Color can be inherited or specific */
+    border-left: 3px solid #007bff;
+    padding-left: 7px; /* Adjust for border */
+}
+.geospatial-hub-page .item-main-info {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+.geospatial-hub-page .item-main-info strong {
+    color: #0056b3;
+}
+.geospatial-hub-page .item-sub-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 3px;
+}
+.geospatial-hub-page .status-indicator-inline {
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    color: white;
+    font-weight: 500;
+}
+/* Status colors for list items (consistent with MapComponent or global) */
+.status-in-transit { background-color: #007bff; }
+.status-delayed { background-color: #dc3545; }
+.status-arrived { background-color: #28a745; }
+.status-pending, .status-scheduled { background-color: #ffc107; color: #333 !important;}
+
+.geospatial-hub-page .priority-indicator {
+    font-weight: 500;
+}
+.geospatial-hub-page .route-preview {
+    font-size: 0.8rem;
+    color: #777;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.geospatial-hub-page .no-transports-message {
+    text-align: center;
+    color: #777;
+    padding: 20px;
+}
+
+
+.geospatial-hub-page .map-display-area-geospatial {
+    flex-grow: 1; /* Map takes remaining space */
+    min-height: 400px; /* Ensure it has some height even if content is small */
+    display: flex; /* For centering placeholder if MapComponent itself doesn't fill */
+    align-items: stretch; /* Make MapComponent fill vertically */
+    justify-content: stretch; /* Make MapComponent fill horizontally */
+}
+.geospatial-hub-page .no-transport-selected.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Fill the area */
+    height: 100%;
+    min-height: 400px;
+    text-align: center;
+    color: #777;
+    font-size: 1.1rem;
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 992px) {
+    .geospatial-hub-page .hub-layout-geospatial {
+        flex-direction: column;
+        min-height: auto; /* Reset min-height for column layout */
+    }
+    .geospatial-hub-page .transport-list-sidebar-geospatial {
+        flex: 0 0 auto; /* Reset flex-basis */
+        width: 100%; /* Full width */
+        max-height: 350px; /* Limit height and make scrollable */
+    }
+    .geospatial-hub-page .map-display-area-geospatial {
+         min-height: 400px; /* Ensure map has height when stacked */
+    }
+}
+@media (max-width: 768px) {
+    .geospatial-hub-page .page-header-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+     .geospatial-hub-page .search-filter-geospatial input.form-control-sm {
+        width: 100%; /* Full width search on small screens */
+        min-width: auto;
+    }
+}

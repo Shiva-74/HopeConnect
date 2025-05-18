@@ -1,0 +1,94 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050; /* Ensure it's above other content */
+  padding: 20px; /* Add padding for smaller screens */
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  min-width: 300px;
+  max-width: 90%; /* Max width for responsiveness */
+  width: auto; /* Allow content to dictate width up to max-width */
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: fadeInModal 0.3s ease-out;
+}
+
+@keyframes fadeInModal {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px; /* Increased space */
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.modal-close-button {
+  background: transparent;
+  border: none;
+  font-size: 1.8rem; /* Slightly smaller for balance */
+  font-weight: bold;
+  line-height: 1;
+  color: #888;
+  cursor: pointer;
+  padding: 5px; /* Easier to click */
+}
+.modal-close-button:hover {
+  color: #555;
+}
+
+.modal-body {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.modal-footer {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right by default */
+  gap: 10px;
+}
+
+@media (max-width: 576px) {
+  .modal-content {
+    max-width: 95%;
+    padding: 20px;
+  }
+  .modal-title {
+    font-size: 1.3rem;
+  }
+  .modal-footer {
+    flex-direction: column; /* Stack buttons on small screens */
+  }
+  .modal-footer .btn {
+    width: 100%;
+  }
+}

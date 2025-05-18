@@ -1,0 +1,9 @@
+/* If you want to use _variables.css, import it here or in index.css */
+/* @import './_variables.css'; */
+
+/* Example:
+body {
+  font-family: 'Your Chosen Font', sans-serif;
+  background-color: var(--light-gray-bg);
+}
+*/

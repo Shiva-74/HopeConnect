@@ -1,0 +1,79 @@
+.recipient-table-row td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+  vertical-align: middle;
+  color: #444;
+}
+
+.recipient-table-row.selectable {
+  cursor: pointer;
+}
+
+.recipient-table-row:hover {
+  background-color: #f8f9fa; /* Light hover effect */
+}
+
+.recipient-table-row.selected {
+  background-color: #e7f3ff; /* Light blue for selected */
+  font-weight: 500;
+}
+.recipient-table-row.selected td {
+  color: #0056b3; /* Darker blue text for selected row */
+}
+
+.best-match-badge {
+  background-color: #007bff;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  margin-left: 8px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: white;
+  text-transform: capitalize;
+  display: inline-block;
+  min-width: 70px;
+  text-align: center;
+}
+
+.status-ready { background-color: #28a745; /* Green */ }
+.status-preparing { background-color: #ffc107; color: #333; /* Yellow */ }
+.status-in-transit { background-color: #17a2b8; /* Teal/Info */ }
+.status-matched { background-color: #6f42c1; /* Purple for matched */ }
+.status-default { background-color: #6c757d; /* Gray for others */ }
+
+
+.match-percentage-bar-container {
+  width: 100px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 20px;
+  position: relative;
+}
+
+.match-percentage-bar {
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: width 0.5s ease-in-out;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Slight shadow for readability */
+}
+
+.recipient-table-row .btn-sm { /* For a potential "View Details" button */
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}

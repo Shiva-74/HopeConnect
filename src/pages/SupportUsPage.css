@@ -1,0 +1,193 @@
+.support-us-page .support-hero-section {
+    background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+    padding: 80px 20px;
+    text-align: center;
+    color: #004d40; /* Dark teal */
+}
+.support-us-page .support-hero-section .hero-icon {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 15px;
+}
+.support-us-page .support-hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.support-us-page .support-hero-section p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+.support-us-page .hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.support-us-page .hero-actions .btn {
+    margin: 0;
+}
+.support-us-page .hero-actions .btn-secondary {
+    background-color: transparent;
+    border: 2px solid #004d40;
+    color: #004d40;
+}
+.support-us-page .hero-actions .btn-secondary:hover {
+    background-color: #004d40;
+    color: white;
+}
+
+
+.support-us-page #impactSection {
+    padding: 60px 0;
+}
+.support-us-page .impact-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.support-us-page .our-impact-stats h3,
+.support-us-page .donation-use h3 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.support-us-page .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid for stats */
+    gap: 20px;
+}
+.support-us-page .impact-item {
+    text-align: center;
+    padding: 15px 10px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+.support-us-page .item-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+.support-us-page .item-label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.support-us-page .use-item {
+    margin-bottom: 15px;
+}
+.support-us-page .use-label-percentage {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.support-us-page .progress-bar-container {
+    background-color: #e9ecef;
+    border-radius: 20px;
+    height: 18px;
+    overflow: hidden;
+}
+.support-us-page .progress-bar {
+    height: 100%;
+    border-radius: 20px;
+    transition: width 0.5s ease-in-out;
+    text-align: center; /* For potential text inside */
+    color: white;
+    font-size: 0.8rem;
+    line-height: 18px;
+}
+
+.support-us-page .donation-form-section {
+    padding: 60px 0;
+    background-color: #f8f9fa; /* Light background for form section */
+}
+.support-us-page .donation-form-container {
+    max-width: 700px; /* Wider form */
+    margin: 0 auto;
+    background-color: #fff; /* White form card */
+    padding: 30px 40px; /* More padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.support-us-page .donation-form-container h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+.support-us-page .form-intro-text {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.support-us-page .amount-presets {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px; /* Space below presets */
+    flex-wrap: wrap;
+    justify-content: center; /* Center preset buttons */
+}
+.support-us-page .amount-presets .btn-outline {
+    background-color: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+    padding: 8px 15px; /* Slightly larger */
+    font-size: 0.95rem;
+    border-radius: 5px; /* Standard button radius */
+}
+.support-us-page .amount-presets .btn-outline:hover,
+.support-us-page .amount-presets .btn-outline.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.support-us-page .secure-donation-text,
+.support-us-page .tax-info-text {
+    text-align: center;
+    margin-top: 15px;
+    color: #28a745; /* Green for secure text */
+    font-size: 0.9rem;
+}
+.support-us-page .tax-info-text {
+    color: #555; /* Gray for tax info */
+    font-size: 0.85rem;
+}
+
+.form-error-text { /* Ensure this is defined */
+    color: red; 
+    display: block; 
+    margin-top: 4px; 
+    font-size: 0.85rem; 
+}
+
+.submit-message { /* Ensure this is defined */
+    margin-top: 15px;
+    padding: 12px 15px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+}
+.submit-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+.submit-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}

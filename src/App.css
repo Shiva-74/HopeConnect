@@ -1,0 +1,318 @@
+/* General App Styles */
+.App {
+  text-align: center; /* Default, can be overridden */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #ffffff; /* White navbar background */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007bff; /* Primary blue */
+}
+
+.navbar-logo img {
+  height: 40px; /* Adjust as needed */
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* Increased gap */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555; /* Darker gray for links */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #007bff; /* Primary blue on hover/active */
+}
+
+.nav-auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-auth-buttons .btn-login {
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.nav-auth-buttons .btn-login:hover {
+  background-color: #e7f3ff;
+}
+
+.nav-auth-buttons .btn-signup {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.nav-auth-buttons .btn-signup:hover {
+  background-color: #0056b3;
+}
+
+
+/* Footer Styles */
+.footer {
+  background-color: #343a40; /* Dark footer */
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Page Title Styles */
+.page-title-header {
+  background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%); /* Light blue gradient */
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: #00796b; /* Teal color for title */
+  margin-bottom: 10px;
+}
+
+.page-subtitle {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Button Styles */
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+.btn-secondary:hover {
+  background-color: #e7f3ff; /* Light blue hover */
+}
+
+/* Form Styles */
+.form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 500px; /* Adjust as needed */
+  margin: 20px auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"],
+.form-group input[type="number"],
+.form-group textarea,
+.form-group select {
+  width: calc(100% - 20px); /* Account for padding */
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.form-checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  text-align: left;
+}
+.form-checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+
+.grid-2-col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  align-items: start;
+}
+
+/* Specific Page Styles - example for Homepage Hero */
+.hero-section {
+  background: linear-gradient(to right, #e0f7fa, #b2ebf2); /* Light blue gradient */
+  color: #004d40; /* Dark teal text */
+  padding: 60px 20px;
+  text-align: left;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem; /* Larger heading */
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.hero-section h1 span {
+  color: #007bff; /* Highlight part of the title */
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.hero-buttons .btn {
+  margin-right: 15px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.hero-stat-item {
+  text-align: left;
+}
+
+.hero-stat-item strong {
+  display: block;
+  font-size: 2.5rem; /* Large stat number */
+  color: #007bff;
+  font-weight: 700;
+}
+
+.hero-stat-item span {
+  font-size: 1rem;
+  color: #004d40;
+}
+
+/* Cards for features, etc. */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+.card h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+/* Section styling */
+.section {
+  padding: 40px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #0056b3;
+  margin-bottom: 30px;
+}
+.section-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* For larger buttons, can be added to App.css or global */
+.btn-lg {
+    padding: 12px 28px !important;
+    font-size: 1.1rem !important;
+}

@@ -1,0 +1,86 @@
+.manage-donors-page .donor-search-form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #fff; /* Card background */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.manage-donors-page .donor-search-form .form-group {
+    margin-bottom: 0; 
+}
+.manage-donors-page .flex-grow-1 .form-group { /* Targets InputField's wrapper */
+    flex-grow: 1;
+    width: 100%;
+}
+.manage-donors-page .donor-search-form input[type="text"] {
+    padding: 10px 14px;
+    font-size: 1rem;
+}
+.manage-donors-page .donor-search-form .btn {
+    padding: 10px 20px;
+    height: 44px; /* Match input height for alignment */
+    white-space: nowrap; /* Prevent button text from wrapping */
+}
+.manage-donors-page .inline-loader {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.manage-donors-page .error-message.card {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.manage-donors-page .donor-list-container.card {
+    padding: 0; /* Remove padding if table has its own */
+    overflow-x: auto; /* Responsive table */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.manage-donors-page .donor-list-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.manage-donors-page .donor-list-table th,
+.manage-donors-page .donor-list-table td {
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+    vertical-align: middle;
+}
+.manage-donors-page .donor-list-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.manage-donors-page .donor-list-table td .btn-sm {
+    margin-right: 5px;
+    margin-bottom: 5px; 
+}
+.manage-donors-page .status-badge { 
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 500;
+    display: inline-block; /* Make it an inline block */
+    min-width: 60px; /* Give some min width */
+    text-align: center;
+}
+.manage-donors-page .status-badge.status-success { background-color: #28a745; }
+.manage-donors-page .status-badge.status-warning, 
+.manage-donors-page .status-badge.status-pending { background-color: #ffc107; color: #333 !important; }
+.manage-donors-page .status-badge.status-danger { background-color: #dc3545; }
+.manage-donors-page .status-badge.status-info { background-color: #17a2b8; }
+.manage-donors-page .status-badge.status-default { background-color: #6c757d; }

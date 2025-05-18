@@ -1,0 +1,117 @@
+.donor-profile-page .profile-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 30px;
+    align-items: flex-start; /* Align items to the top of their grid cell */
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.donor-profile-page .profile-left-column,
+.donor-profile-page .profile-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Space between cards in a column */
+}
+
+.donor-profile-page section.card,
+.donor-profile-page .impact-overview-section { /* Ensure impact-overview also gets card styles */
+    background-color: #fff;
+    padding: 25px 30px; /* Consistent padding */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    /* margin-bottom: 30px; Removed as gap is used in grid/flex column */
+}
+
+.donor-profile-page h3 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.donor-profile-page .details-grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */ /* Can be 1fr for stacked look */
+    grid-template-columns: 1fr; 
+    gap: 12px; /* Reduced gap for tighter list */
+}
+.donor-profile-page .details-grid p {
+    margin: 0; /* Removed default p margin */
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
+.donor-profile-page .details-grid p strong {
+    color: #333;
+    min-width: 130px; /* Align labels */
+    display: inline-block;
+}
+.text-right { /* Utility class */
+    text-align: right;
+}
+.btn-outline.btn-sm { /* Styles for small outline button */
+    padding: 6px 12px;
+    font-size: 0.85rem;
+}
+
+.donor-profile-page .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minmax for stat cards */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.donor-profile-page .messages-list .message-item {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border-left: 4px solid #17a2b8; /* Teal accent */
+}
+.donor-profile-page .message-text {
+    font-style: italic;
+    color: #444; /* Darker text for readability */
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+.donor-profile-page .message-meta {
+    font-size: 0.85rem;
+    color: #555; /* Slightly darker meta text */
+    text-align: right;
+}
+
+.donor-profile-page .incentives-section ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #444;
+    font-size: 0.95rem; /* Slightly smaller list item text */
+}
+.donor-profile-page .incentives-section li {
+    margin-bottom: 10px; /* Increased spacing */
+    line-height: 1.6;
+}
+.donor-profile-page .incentives-section p a {
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .donor-profile-page .profile-content-grid {
+        grid-template-columns: 1fr; /* Stack columns */
+    }
+}
+@media (max-width: 576px) {
+    .donor-profile-page .stats-grid {
+        grid-template-columns: 1fr; /* Stack stat cards on very small screens */
+    }
+     .donor-profile-page section.card,
+     .donor-profile-page .impact-overview-section {
+        padding: 20px; /* Reduce padding on small screens */
+    }
+    .donor-profile-page h3 {
+        font-size: 1.3rem;
+    }
+}

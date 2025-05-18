@@ -1,0 +1,174 @@
+.track-donation-page .track-donation-form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 25px;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+/* Utility class for InputField to grow */
+.flex-grow-1 .form-group { /* Target the .form-group inside .flex-grow-1 */
+    flex-grow: 1;
+    width: 100%; /* Ensure it takes available width */
+}
+.track-donation-page .track-donation-form .form-group {
+    margin-bottom: 0; 
+}
+.track-donation-page .track-donation-form input[type="text"] {
+    padding: 12px 15px;
+    font-size: 1.05rem;
+    text-transform: uppercase; /* Display ID in uppercase */
+}
+.track-donation-page .track-donation-form .btn {
+    padding: 12px 25px;
+    font-size: 1.05rem;
+    height: 48px; /* Match input height for alignment */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.track-donation-page .error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px 20px; /* Increased padding */
+    border-radius: 5px;
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto;
+    font-weight: 500; /* Bolder error message */
+}
+
+.track-donation-page .donation-summary-card {
+    padding: 30px;
+    margin-top: 30px;
+    background-color: #fff;
+}
+.track-donation-page .donation-summary-card h3 {
+    font-size: 1.8rem;
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.track-donation-page .summary-meta {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+.track-donation-page .summary-thank-you {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.track-donation-page .donations-list-container h4 {
+    font-size: 1.4rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.track-donation-page .donations-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.track-donation-page .donation-item-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+}
+.track-donation-page .donation-item-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.track-donation-page .donation-item-card.highlighted {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0,123,255,.25);
+}
+
+
+.track-donation-page .item-organ-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+.track-donation-page .organ-icon {
+    font-size: 2rem; /* Larger icon */
+}
+.track-donation-page .organ-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0056b3;
+    flex-grow: 1;
+}
+.track-donation-page .item-status-badge {
+    font-weight: 500;
+    padding: 5px 12px; /* More padding */
+    border-radius: 15px;
+    font-size: 0.85rem;
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+}
+/* Status colors (reusing from RecipientTableRow.css logic or define specifically) */
+.track-donation-page .status-in-transit { background-color: #17a2b8; }
+.track-donation-page .status-successful { background-color: #28a745; }
+.track-donation-page .status-matched, .track-donation-page .status-awaiting-transplant { background-color: #ffc107; color: #333 !important; }
+.track-donation-page .status-pending, .track-donation-page .status-stored-for-future-use { background-color: #6c757d; }
+.track-donation-page .status-default { background-color: #adb5bd; }
+
+
+.track-donation-page .item-details p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+.track-donation-page .item-details p strong {
+    color: #333;
+    min-width: 130px; /* Align labels */
+    display: inline-block;
+}
+
+.track-donation-page .item-action-button {
+    margin-top: auto; /* Push button to bottom of card */
+    width: 100%;
+    padding: 8px 15px;
+}
+
+
+.track-donation-page .retrieval-toast {
+    margin-top: 30px;
+    background-color: #e7f3ff; /* Light blue toast */
+    color: #004085;
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.95rem;
+    border: 1px solid #b8daff;
+}
+
+
+@media (max-width: 768px) {
+    .track-donation-page .track-donation-form {
+        flex-direction: column;
+        align-items: stretch; /* Make input/button full width */
+    }
+    .track-donation-page .track-donation-form .btn {
+        width: 100%;
+    }
+    .track-donation-page .donations-list-grid {
+        grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    }
+}

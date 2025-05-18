@@ -1,0 +1,109 @@
+.footer {
+  background: #303036;
+  color: #d3d3d3;
+  padding-top: 40px;
+  position: relative; /* Or `static` if not intended to be sticky/fixed */
+}
+
+.footer .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Was 30px, reducing for better fit */
+  padding-bottom: 20px; /* Was 40px */
+}
+
+.footer .footer-section {
+  flex: 1;
+  padding: 20px;
+  min-width: 280px; /* Ensure sections don't get too squeezed */
+}
+
+.footer .footer-logo-text {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.footer .footer-logo-text span {
+  color: #007bff; /* HopeConnect primary color */
+}
+
+.footer .footer-section h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.footer .footer-section p,
+.footer .footer-section span,
+.footer .footer-section li a {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #d3d3d3;
+}
+.footer .footer-section li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer .footer-section .contact span {
+  display: block;
+  margin-bottom: 8px; /* Added spacing */
+}
+.footer .footer-section .contact i { /* For Font Awesome icons if used */
+  margin-right: 8px;
+}
+
+.footer .footer-section.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .footer-section.contact-form-footer .text-input {
+  padding: .7rem 1rem;
+  display: block;
+  width: calc(100% - 22px); /* Account for padding */
+  border-radius: 5px;
+  border: 1px solid #555;
+  background: #444;
+  color: #f8f8f8;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.footer .footer-section.contact-form-footer .text-input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.footer .footer-section.contact-form-footer .btn-sm {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    width: 100%; /* Make button full width in this context */
+}
+
+
+.footer .footer-bottom {
+  background: #222;
+  color: #a0a0a0;
+  height: auto; /* Changed from fixed height */
+  min-height: 50px;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0; /* Adjusted padding */
+  border-top: 1px solid #444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer .footer-content {
+    flex-direction: column;
+    align-items: center; /* Was stretch, center makes more sense for column */
+    text-align: center;
+  }
+  .footer .footer-section {
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 15px; /* Slightly reduce padding */
+  }
+}

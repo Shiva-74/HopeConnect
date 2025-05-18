@@ -1,0 +1,92 @@
+.donation-audit-trail-page .page-header-controls { /* Copied from GeospatialHub for consistency */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.donation-audit-trail-page h3 {
+    font-size: 1.6rem;
+    color: #0056b3;
+    margin-bottom: 3px;
+    margin-top: 0;
+}
+.donation-audit-trail-page .page-subtitle-text {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.donation-audit-trail-page .audit-trail-container {
+    background-color: #f9f9f9; /* Light background for the trail area */
+    padding: 25px 30px; /* Increased padding */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    margin-top: 20px;
+}
+
+.donation-audit-trail-page .audit-summary-panel {
+    background-color: #e7f3ff; /* Light blue for summary box */
+    padding: 20px 25px;
+    border-radius: 6px;
+    margin-bottom: 30px; /* More space below summary */
+    border: 1px solid #b8d6f3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid for summary items */
+    gap: 10px 20px; /* Row gap, Column gap */
+}
+.donation-audit-trail-page .summary-item {
+    font-size: 0.95rem;
+    color: #004085; 
+    line-height: 1.5;
+}
+.donation-audit-trail-page .summary-item strong {
+    color: #003366;
+    min-width: 150px; /* Align labels in some cases */
+    display: inline-block; /* For min-width to work well */
+}
+.donation-audit-trail-page .summary-item a {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.donation-audit-trail-page .summary-item a:hover {
+    color: #003366;
+}
+
+
+.status-tag { /* General status tag styling */
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+.status-tag.status-successful { background-color: #28a745; }
+.status-tag.status-in-progress, .status-tag.status-in-transit { background-color: #007bff; }
+.status-tag.status-pending, .status-tag.status-awaiting { background-color: #ffc107; color: #333 !important;}
+.status-tag.status-default, .status-tag.status-recorded { background-color: #6c757d; }
+.status-tag.status-failed, .status-tag.status-error { background-color: #dc3545; }
+/* Add more status colors as needed */
+
+
+.donation-audit-trail-page .audit-steps-list {
+    position: relative; /* For the main line if drawn separately or for absolute positioning within items */
+}
+
+/* Error message style (copied from other pages for consistency) */
+.donation-audit-trail-page .error-message.card {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+/* Ensure AuditTrailItem.css styles are effective here */
+/* Specifically, for the .audit-trail-item and its children */
