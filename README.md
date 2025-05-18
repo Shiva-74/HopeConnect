@@ -158,7 +158,8 @@ npm run dev
 ```
 Now you will see the backend is running
 
-# Now go to hopeconnect-frontend directory in a new terminal
+# Now go to hopeconnect-frontend directory in a new terminal  
+### Put the src and public file into a new directory named hopeconnect-frontend  
 ```
 cd hopeconnect
 cd hopeconnect-frontend
