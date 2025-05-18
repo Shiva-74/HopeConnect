@@ -117,11 +117,49 @@ truffle compile --all
 truffle migrate --reset
 ```
 
-## Now go to hopeconnect-ai  
+## Now go to hopeconnect-ai  in a new terminal
 ```
-cd ..
+cd hopeconnect
 cd hopeconnect-ai
 ```
+### Run requirements.txt  
+
+```
+pip install -r requirements.txt
+```
+
+### Run app.py
+```
+python src/python.py
+```
+
+# Now go to hopeconnect-backend in a new terminal
+```
+cd hopeconnect
+cd hopeconnect-backend
+```
+
+### Run the backend
+```
+npm run dev
+```
+
+# Now go to the hopeconnect-frontend in a new terminal
+```
+cd hopeconnect
+cd hopeconnect-frontend
+```
+
+### Start the frontend app
+```
+set NODE_OPTIONS=--openssl-legacy-provider
+npm start
+```
+
+## License
+
+HopeConnect is released under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 
 
 
